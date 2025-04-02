@@ -50,7 +50,7 @@ export default function ContactPage() {
                   <MapPin className="h-6 w-6 text-blue-700 mr-4 flex-shrink-0" />
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Corporate Office</h3>
-                    <p className="text-gray-600">123 Business Park, New Delhi - 110001, India</p>
+                    <p className="text-gray-600">Flat no 1 & 8 DDA Flats Near Post office, Badarpur New Delhi 110044, India</p>
                   </div>
                 </div>
                 <div className="flex items-start">
@@ -58,9 +58,9 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Phone</h3>
                     <p className="text-gray-600">
-                      1800-XXX-XXXX (Toll Free)
+                    +91-9971120778
                       <br />
-                      +91-XX-XXXX-XXXX
+                      +91-9990107776
                     </p>
                   </div>
                 </div>
@@ -96,19 +96,19 @@ export default function ContactPage() {
               <StaggerChildren className="space-y-4">
                 {[
                   {
-                    name: "Mumbai Office",
-                    address: "456 Business Hub, Mumbai - 400001",
-                    phone: "+91-XX-XXXX-XXXX",
+                    name: "Noida Office",
+                    address: "1st floor, 108, Khan Market, Opp. Barclays Building, Noida U.P 201309, India",
+                    phone: "+91-8851362272",
+                  },
+                  {
+                    name: "Gurugram Office",
+                    address: "Plot no 7 Q sector 10 gurugram, India",
+                    phone: "+91-8860875400",
                   },
                   {
                     name: "Bangalore Office",
-                    address: "789 Tech Park, Bangalore - 560001",
-                    phone: "+91-XX-XXXX-XXXX",
-                  },
-                  {
-                    name: "Chennai Office",
-                    address: "101 Business Center, Chennai - 600001",
-                    phone: "+91-XX-XXXX-XXXX",
+                    address: "5/4, Msr Nagar, Mathikere, Bengaluru 560054, India",
+                    phone: "+91-9971120778",
                   },
                 ].map((office, index) => (
                   <div
