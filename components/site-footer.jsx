@@ -124,11 +124,11 @@ export default function SiteFooter() {
             <ul className="space-y-4">
               <li className="flex">
                 <MapPin className="h-5 w-5 mr-3 flex-shrink-0" />
-                <span>Corporate Office, 123 Business Park, New Delhi - 110001, India</span>
+                <span>Flat no 1 & 8 DDA Flats Near Post office, Badarpur New Delhi 110044, India</span>
               </li>
               <li className="flex">
                 <Phone className="h-5 w-5 mr-3 flex-shrink-0" />
-                <span>1800-XXX-XXXX (Toll Free)</span>
+                <span>+91-9971120778, +91-9990107776</span>
               </li>
               <li className="flex">
                 <Mail className="h-5 w-5 mr-3 flex-shrink-0" />

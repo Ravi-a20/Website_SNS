@@ -3,31 +3,31 @@ import { Button } from "@/components/ui/button"
 import { ChevronRight } from "lucide-react"
 import FadeIn from "@/components/animations/fade-in"
 import StaggerChildren from "@/components/animations/stagger-children"
-import ParallaxScroll from "@/components/animations/parallax-scroll"
+// import ParallaxScroll from "@/components/animations/parallax-scroll"
 
 export default function AboutPage() {
   return (
     <div className="container mx-auto px-4 py-12">
-      <ParallaxScroll className="mb-16">
+      <div className="mb-16 relative z-10">
         <FadeIn direction="up">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl font-bold mb-6">About SNS India</h1>
+            <h1 className="text-4xl font-bold mb-6">About Safensafe Management</h1>
             <p className="text-xl text-gray-600">
               A leading security services provider with a nationwide presence, delivering exceptional security solutions
               for over three decades.
             </p>
           </div>
         </FadeIn>
-      </ParallaxScroll>
+      </div>
 
       <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
         <FadeIn direction="right">
           <div>
             <h2 className="text-3xl font-bold mb-6">Our Story</h2>
             <p className="text-lg text-gray-600 mb-6">
-              Founded in the early 1990s, SNS India began as a small security firm with a vision to transform the
-              security services landscape in India. Over the years, we have grown to become one of the country's largest
-              security services providers, with operations spanning across all major cities and states.
+              Founded in the 2002, Safensafe Management began as a small security firm with a vision to transform the
+              security services landscape in India. Over the years, we have grown to become one of the country's popular
+              security services providers, with operations spanning across 11+ major cities and states.
             </p>
             <p className="text-lg text-gray-600">
               Our journey has been marked by a steadfast commitment to excellence, innovation, and customer
@@ -40,7 +40,7 @@ export default function AboutPage() {
           <div className="relative h-[400px] rounded-lg overflow-hidden shadow-lg">
             <Image
               src="/placeholder.svg?height=400&width=600"
-              alt="SNS India History"
+              alt="Safensafe Management History"
               fill
               className="object-cover transition-transform duration-700 hover:scale-105"
             />
@@ -138,20 +138,59 @@ export default function AboutPage() {
         </div>
       </FadeIn>
       <StaggerChildren className="grid md:grid-cols-3 gap-8 mb-20">
-        {[1, 2, 3, 4, 5, 6].map((i) => (
+        {[
+          {
+            name: "Dilip Pandey",
+            title: "Co-Founder",
+            description: "Leading the company with 25+ years of experience in security and information industry.",
+            image: "/papa_1011.jpg"
+          },
+          {
+            name: "Uday Shankar Mishra",
+            title: "Co-Founder",
+            description: "Leading the company with 27+ years of experience in security industry.",
+            image: "/mama_101.jpg"
+            // image: "/placeholder.svg?height=200&width=200"
+          },
+          {
+            name: "Om Prakash Mishra",
+            title: "Manager and Sr Field Officer", 
+            description: "Managing new recruits and ground duties.", 
+            image: "/placeholder.svg?height=200&width=200"
+          
+          },
+          // { 
+          //   name: "Emily Davis", 
+          //   title: "COO", 
+          //   description: "Ensuring smooth operations with strong leadership.", 
+          //   image: "/placeholder.svg?height=200&width=200"
+          // },
+          // { 
+          //   name: "Michael Brown", 
+          //   title: "VP of Marketing", 
+          //   description: "Building brand awareness and customer engagement.", 
+          //   image: "/placeholder.svg?height=200&width=200" 
+          // },
+          // { 
+          //   name: "Sarah Wilson", 
+          //   title: "Head of HR", 
+          //   description: "Fostering company culture and employee growth.", 
+          //   image: "/placeholder.svg?height=200&width=200" 
+          // }
+        ].map((executive, i) => (
           <div key={i} className="text-center group">
             <div className="relative w-48 h-48 mx-auto mb-4 rounded-full overflow-hidden">
               <Image
-                src={`/placeholder.svg?height=200&width=200`}
-                alt={`Team Member ${i}`}
+                src={executive.image}
+                alt={executive.name}
                 fill
                 className="object-cover transition-transform duration-500 group-hover:scale-110"
               />
             </div>
-            <h3 className="text-xl font-bold">Executive Name</h3>
-            <p className="text-blue-700 mb-2">Position Title</p>
+            <h3 className="text-xl font-bold">{executive.name}</h3>
+            <p className="text-blue-700 mb-2">{executive.title}</p>
             <p className="text-gray-600 text-sm">
-              Brief description of the executive's experience and role within the company.
+              {executive.description}
             </p>
           </div>
         ))}
@@ -161,7 +200,7 @@ export default function AboutPage() {
         <div className="bg-blue-700 text-white p-12 rounded-lg text-center">
           <h2 className="text-3xl font-bold mb-6">Join Our Team</h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto">
-            We're always looking for talented individuals to join our team. Explore career opportunities at SNS India
+            We're always looking for talented individuals to join our team. Explore career opportunities at Safensafe Management
             and be part of our mission to create a safer society.
           </p>
           <Button className="bg-yellow-500 hover:bg-yellow-600 text-blue-900 transition-transform duration-300 hover:-translate-y-1">
