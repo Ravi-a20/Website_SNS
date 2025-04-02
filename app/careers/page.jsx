@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image"
-import { ChevronRight } from "lucide-react"
+import { ChevronRight } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import FadeIn from "@/components/animations/fade-in"
 import StaggerChildren from "@/components/animations/stagger-children"
@@ -125,7 +125,7 @@ export default function CareersPage() {
             <div className="max-w-3xl mx-auto text-center">
               <h1 className="text-4xl md:text-6xl font-bold mb-6">Join Our Team</h1>
               <p className="text-xl text-blue-100 mb-8">
-                Build a rewarding career in the security industry with SNS India, one of the country's leading security
+                Build a rewarding career in the security industry with Safensafe Management, one of the country's leading security
                 service providers
               </p>
               <Button
@@ -143,12 +143,12 @@ export default function CareersPage() {
         </div>
       </section>
 
-      {/* Why Join Us Section */}
+      {/* Why Join Us Section - Fixed to 2 columns */}
       <section className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4">
           <FadeIn direction="up">
             <div className="text-center mb-16">
-              <TextReveal text="Why Join SNS India?" className="text-3xl md:text-4xl font-bold text-gray-900 mb-4" />
+              <TextReveal text="Why Join Safensafe Management?" className="text-3xl md:text-4xl font-bold text-gray-900 mb-4" />
               <p className="text-lg text-gray-600 max-w-3xl mx-auto">
                 Discover the benefits of building your career with one of India's most trusted security service
                 providers
@@ -156,8 +156,8 @@ export default function CareersPage() {
             </div>
           </FadeIn>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <StaggerChildren>
+          <StaggerChildren>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
                 {
                   title: "Professional Growth",
@@ -197,7 +197,7 @@ export default function CareersPage() {
               ].map((benefit, index) => (
                 <div
                   key={index}
-                  className="bg-gray-50 p-8 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1"
+                  className="bg-gray-50 p-8 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 h-full"
                 >
                   <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
                     <Image src={benefit.icon || "/placeholder.svg"} alt={benefit.title} width={40} height={40} />
@@ -206,12 +206,12 @@ export default function CareersPage() {
                   <p className="text-gray-600">{benefit.description}</p>
                 </div>
               ))}
-            </StaggerChildren>
-          </div>
+            </div>
+          </StaggerChildren>
         </div>
       </section>
 
-      {/* Current Openings Section */}
+      {/* Current Openings Section - Fixed to 2 columns */}
       <section className="py-16 md:py-24 bg-gray-50">
         <div className="container mx-auto px-4">
           <FadeIn direction="up">
@@ -223,12 +223,12 @@ export default function CareersPage() {
             </div>
           </FadeIn>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            <StaggerChildren>
+          <StaggerChildren>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {positions.map((position, index) => (
                 <div
                   key={index}
-                  className="bg-white p-6 rounded-lg border border-gray-200 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300"
+                  className="bg-white p-6 rounded-lg border border-gray-200 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 h-full"
                 >
                   <div className="flex justify-between items-start mb-4">
                     <h3 className="text-xl font-bold text-gray-900">{position.title}</h3>
@@ -250,12 +250,11 @@ export default function CareersPage() {
                   </div>
                   <Button
                     variant="outline"
-                    className="w-full border-blue-700 text-blue-700 hover:bg-blue-50"
+                    className="w-full border-blue-700 text-blue-700 hover:bg-blue-50 mt-auto"
                     onClick={() => {
                       const formSection = document.getElementById("application-form")
                       const positionSelect = document.getElementById("position")
                       if (positionSelect) {
-                        // Find the option with this position title and select it
                         for (let i = 0; i < positionSelect.options.length; i++) {
                           if (positionSelect.options[i].text === position.title) {
                             positionSelect.selectedIndex = i
@@ -270,8 +269,8 @@ export default function CareersPage() {
                   </Button>
                 </div>
               ))}
-            </StaggerChildren>
-          </div>
+            </div>
+          </StaggerChildren>
         </div>
       </section>
 
@@ -282,7 +281,7 @@ export default function CareersPage() {
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Application Form</h2>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                Fill out the form below to apply for a position at SNS India. We'll review your application and get back
+                Fill out the form below to apply for a position at Safensafe Management. We'll review your application and get back
                 to you soon.
               </p>
             </div>
@@ -296,20 +295,20 @@ export default function CareersPage() {
         </div>
       </section>
 
-      {/* Testimonials Section */}
+      {/* Employee Testimonials Section - Fixed to 2 columns */}
       <section className="py-16 md:py-24 bg-gray-50">
         <div className="container mx-auto px-4">
           <FadeIn direction="up">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Employee Testimonials</h2>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                Hear from our team members about their experience working with SNS India
+                Hear from our team members about their experience working with Safensafe Management
               </p>
             </div>
           </FadeIn>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            <StaggerChildren>
+          <StaggerChildren>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {[
                 {
                   name: "Rajiv Sharma",
@@ -317,7 +316,7 @@ export default function CareersPage() {
                   years: "5 years with SNS",
                   image: "/placeholder.svg?height=100&width=100",
                   quote:
-                    "Joining SNS India was one of the best decisions of my career. I started as a security guard and have grown to become a supervisor through the company's training and development programs.",
+                    "Joining Safensafe Management was one of the best decisions of my career. I started as a security guard and have grown to become a supervisor through the company's training and development programs.",
                 },
                 {
                   name: "Priya Patel",
@@ -325,7 +324,7 @@ export default function CareersPage() {
                   years: "3 years with SNS",
                   image: "/placeholder.svg?height=100&width=100",
                   quote:
-                    "The work environment at SNS India is professional yet supportive. The management values our input and there are ample opportunities for career advancement.",
+                    "The work environment at Safensafe Management is professional yet supportive. The management values our input and there are ample opportunities for career advancement.",
                 },
                 {
                   name: "Sunil Kumar",
@@ -333,12 +332,20 @@ export default function CareersPage() {
                   years: "7 years with SNS",
                   image: "/placeholder.svg?height=100&width=100",
                   quote:
-                    "What I appreciate most about working with SNS India is the emphasis on continuous learning and professional development. The company invests in its employees.",
+                    "What I appreciate most about working with Safensafe Management is the emphasis on continuous learning and professional development. The company invests in its employees.",
+                },
+                {
+                  name: "Anjali Mehta",
+                  position: "Security Trainer",
+                  years: "4 years with SNS",
+                  image: "/placeholder.svg?height=100&width=100",
+                  quote:
+                    "The leadership team at Safensafe Management truly cares about employee growth and provides excellent resources for professional development.",
                 },
               ].map((testimonial, index) => (
                 <div
                   key={index}
-                  className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1"
+                  className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 h-full"
                 >
                   <div className="flex items-center mb-6">
                     <div className="w-16 h-16 rounded-full overflow-hidden mr-4">
@@ -359,8 +366,8 @@ export default function CareersPage() {
                   <p className="text-gray-600 italic">"{testimonial.quote}"</p>
                 </div>
               ))}
-            </StaggerChildren>
-          </div>
+            </div>
+          </StaggerChildren>
         </div>
       </section>
 
@@ -368,7 +375,7 @@ export default function CareersPage() {
       <section className="py-16 md:py-24 bg-blue-700 text-white">
         <div className="container mx-auto px-4 text-center">
           <FadeIn direction="up">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Start Your Career with SNS India?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Start Your Career with Safensafe Management?</h2>
             <p className="text-xl mb-10 max-w-3xl mx-auto">
               Join our team of security professionals and build a rewarding career in the security industry.
             </p>
@@ -388,4 +395,3 @@ export default function CareersPage() {
     </div>
   )
 }
-
