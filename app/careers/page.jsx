@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image"
-import { ChevronRight } from 'lucide-react'
+import { ChevronRight, UserRound, TrendingUp, DollarSign, Shield, Layers, Award, Clock } from 'lucide-react';
 import { Button } from "@/components/ui/button"
 import FadeIn from "@/components/animations/fade-in"
 import StaggerChildren from "@/components/animations/stagger-children"
@@ -113,6 +113,45 @@ export default function CareersPage() {
     },
   ]
 
+  // Benefits with icons
+  const benefits = [
+    {
+      title: "Professional Growth",
+      description:
+        "We provide continuous training and development opportunities to help you advance in your career.",
+      icon: <TrendingUp className="h-6 w-6 text-blue-600" />,
+    },
+    {
+      title: "Competitive Compensation",
+      description:
+        "We offer attractive salary packages and benefits that recognize your skills and contribution.",
+      icon: <DollarSign className="h-6 w-6 text-blue-600" />,
+    },
+    {
+      title: "Job Security",
+      description:
+        "As a growing organization with a nationwide presence, we provide stable employment opportunities.",
+      icon: <Shield className="h-6 w-6 text-blue-600" />,
+    },
+    {
+      title: "Diverse Opportunities",
+      description:
+        "With operations across various sectors, you can explore different areas of the security industry.",
+      icon: <Layers className="h-6 w-6 text-blue-600" />,
+    },
+    {
+      title: "Recognition & Rewards",
+      description: "We recognize and reward exceptional performance through various incentive programs.",
+      icon: <Award className="h-6 w-6 text-blue-600" />,
+    },
+    {
+      title: "Work-Life Balance",
+      description:
+        "We value your personal time and strive to create a healthy work environment for all employees.",
+      icon: <Clock className="h-6 w-6 text-blue-600" />,
+    },
+  ]
+
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
@@ -143,7 +182,7 @@ export default function CareersPage() {
         </div>
       </section>
 
-      {/* Why Join Us Section - Fixed to 2 columns */}
+      {/* Why Join Us Section - With symbols instead of images */}
       <section className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4">
           <FadeIn direction="up">
@@ -158,49 +197,13 @@ export default function CareersPage() {
 
           <StaggerChildren>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {[
-                {
-                  title: "Professional Growth",
-                  description:
-                    "We provide continuous training and development opportunities to help you advance in your career.",
-                  icon: "/placeholder.svg?height=80&width=80",
-                },
-                {
-                  title: "Competitive Compensation",
-                  description:
-                    "We offer attractive salary packages and benefits that recognize your skills and contribution.",
-                  icon: "/placeholder.svg?height=80&width=80",
-                },
-                {
-                  title: "Job Security",
-                  description:
-                    "As a growing organization with a nationwide presence, we provide stable employment opportunities.",
-                  icon: "/placeholder.svg?height=80&width=80",
-                },
-                {
-                  title: "Diverse Opportunities",
-                  description:
-                    "With operations across various sectors, you can explore different areas of the security industry.",
-                  icon: "/placeholder.svg?height=80&width=80",
-                },
-                {
-                  title: "Recognition & Rewards",
-                  description: "We recognize and reward exceptional performance through various incentive programs.",
-                  icon: "/placeholder.svg?height=80&width=80",
-                },
-                {
-                  title: "Work-Life Balance",
-                  description:
-                    "We value your personal time and strive to create a healthy work environment for all employees.",
-                  icon: "/placeholder.svg?height=80&width=80",
-                },
-              ].map((benefit, index) => (
+              {benefits.map((benefit, index) => (
                 <div
                   key={index}
                   className="bg-gray-50 p-8 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 h-full"
                 >
                   <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
-                    <Image src={benefit.icon || "/placeholder.svg"} alt={benefit.title} width={40} height={40} />
+                    {benefit.icon}
                   </div>
                   <h3 className="text-xl font-bold mb-3 text-gray-900">{benefit.title}</h3>
                   <p className="text-gray-600">{benefit.description}</p>
@@ -308,65 +311,50 @@ export default function CareersPage() {
           </FadeIn>
 
           <StaggerChildren>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {[
-                {
-                  name: "Rajiv Sharma",
-                  position: "Security Supervisor",
-                  years: "5 years with SNS",
-                  image: "/placeholder.svg?height=100&width=100",
-                  quote:
-                    "Joining Safensafe Management was one of the best decisions of my career. I started as a security guard and have grown to become a supervisor through the company's training and development programs.",
-                },
-                {
-                  name: "Priya Patel",
-                  position: "Office Manager",
-                  years: "3 years with SNS",
-                  image: "/placeholder.svg?height=100&width=100",
-                  quote:
-                    "The work environment at Safensafe Management is professional yet supportive. The management values our input and there are ample opportunities for career advancement.",
-                },
-                {
-                  name: "Sunil Kumar",
-                  position: "Field Officer",
-                  years: "7 years with SNS",
-                  image: "/placeholder.svg?height=100&width=100",
-                  quote:
-                    "What I appreciate most about working with Safensafe Management is the emphasis on continuous learning and professional development. The company invests in its employees.",
-                },
-                {
-                  name: "Anjali Mehta",
-                  position: "Security Trainer",
-                  years: "4 years with SNS",
-                  image: "/placeholder.svg?height=100&width=100",
-                  quote:
-                    "The leadership team at Safensafe Management truly cares about employee growth and provides excellent resources for professional development.",
-                },
-              ].map((testimonial, index) => (
-                <div
-                  key={index}
-                  className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 h-full"
-                >
-                  <div className="flex items-center mb-6">
-                    <div className="w-16 h-16 rounded-full overflow-hidden mr-4">
-                      <Image
-                        src={testimonial.image || "/placeholder.svg"}
-                        alt={testimonial.name}
-                        width={64}
-                        height={64}
-                        className="object-cover"
-                      />
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-lg">{testimonial.name}</h3>
-                      <p className="text-blue-700">{testimonial.position}</p>
-                      <p className="text-gray-500 text-sm">{testimonial.years}</p>
-                    </div>
-                  </div>
-                  <p className="text-gray-600 italic">"{testimonial.quote}"</p>
-                </div>
-              ))}
+          <div className="min-h-screen bg-gray-100 flex items-center justify-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto p-6">
+        {[
+          {
+            name: "Rajiv Sharma",
+            position: "Security Supervisor",
+            years: "5 years with SNS",
+            quote: "Joining Safensafe Management was one of the best decisions of my career. I started as a security guard and have grown to become a supervisor through the company's training and development programs."
+          },
+          {
+            name: "Priya Patel",
+            position: "Office Manager",
+            years: "3 years with SNS",
+            quote: "The work environment at Safensafe Management is professional yet supportive. The management values our input and there are ample opportunities for career advancement."
+          },
+          {
+            name: "Sunil Kumar",
+            position: "Field Officer",
+            years: "7 years with SNS",
+            quote: "What I appreciate most about working with Safensafe Management is the emphasis on continuous learning and professional development. The company invests in its employees."
+          },
+          {
+            name: "Anjali Mehta",
+            position: "Security Trainer",
+            years: "4 years with SNS",
+            quote: "The leadership team at Safensafe Management truly cares about employee growth and provides excellent resources for professional development."
+          }
+        ].map((testimonial, index) => (
+          <div key={index} className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1">
+            <div className="flex items-center mb-6">
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                <UserRound className="h-8 w-8 text-blue-600" />
+              </div>
+              <div>
+                <h3 className="font-bold text-lg">{testimonial.name}</h3>
+                <p className="text-blue-700">{testimonial.position}</p>
+                <p className="text-gray-500 text-sm">{testimonial.years}</p>
+              </div>
             </div>
+            <p className="text-gray-600 italic">&quot;{testimonial.quote}&quot;</p>
+          </div>
+        ))}
+      </div>
+    </div>
           </StaggerChildren>
         </div>
       </section>

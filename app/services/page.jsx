@@ -14,7 +14,7 @@ export default function ServicesPage() {
       id: "manned-guarding",
       title: "Manned Guarding",
       icon: <Shield className="h-10 w-10 text-blue-700" />,
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/manguarding.jpg?height=400&width=600",
       description:
         "Professional security personnel trained to protect your premises, assets, and people with vigilance and expertise.",
       details:
@@ -24,7 +24,7 @@ export default function ServicesPage() {
       id: "electronic-security",
       title: "Electronic Security",
       icon: <Monitor className="h-10 w-10 text-blue-700" />,
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/electronic.jpg?height=400&width=600",
       description:
         "Advanced surveillance systems, access control, and alarm solutions to enhance your security infrastructure.",
       details:
@@ -34,7 +34,7 @@ export default function ServicesPage() {
       id: "cash-management",
       title: "Cash Management Services",
       icon: <Banknote className="h-10 w-10 text-blue-700" />,
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/van.jpg?height=400&width=600",
       description:
         "Secure cash handling, transportation, and processing services for financial institutions and businesses.",
       details:
@@ -44,7 +44,7 @@ export default function ServicesPage() {
       id: "facility-management",
       title: "Facility Management",
       icon: <Building2 className="h-10 w-10 text-blue-700" />,
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/facility.jpg?height=400&width=600",
       description:
         "Comprehensive facility management services to maintain and optimize your property's operations and security.",
       details:
@@ -54,7 +54,7 @@ export default function ServicesPage() {
       id: "security-training",
       title: "Security Training",
       icon: <GraduationCap className="h-10 w-10 text-blue-700" />,
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/guard_1.png?height=400&width=600",
       description: "Professional training programs for security personnel to enhance their skills and knowledge.",
       details:
         "We offer comprehensive security training programs for security professionals, corporate employees, and individuals. Our training covers various aspects of security including threat assessment, emergency response, first aid, fire safety, and more. Our experienced trainers use practical scenarios and hands-on exercises to ensure effective learning.",
@@ -73,7 +73,7 @@ export default function ServicesPage() {
       id: "detective-services",
       title: "Detective Services",
       icon: <Search className="h-10 w-10 text-blue-700" />,
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/detective.jpg?height=400&width=600",
       description:
         "Professional investigation services to address corporate fraud, background verification, and other security concerns.",
       details:
@@ -83,7 +83,7 @@ export default function ServicesPage() {
       id: "executive-protection",
       title: "Executive Protection",
       icon: <UserCheck className="h-10 w-10 text-blue-700" />,
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/facility.jpg?height=400&width=600",
       description:
         "Specialized security services for executives, VIPs, and high-profile individuals to ensure their safety.",
       details:
@@ -208,7 +208,7 @@ export default function ServicesPage() {
                     <Button
                       size="lg"
                       variant="outline"
-                      className="border-white text-white hover:bg-blue-600 transition-transform duration-300 hover:-translate-y-1"
+                      className="border-white text-black hover:bg-blue-600 transition-transform duration-300 hover:-translate-y-1"
                     >
                       Learn About Our Company
                     </Button>
@@ -217,36 +217,6 @@ export default function ServicesPage() {
               </FadeIn>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Clients Section */}
-      <section className="py-16 md:py-24 bg-white">
-        <div className="container mx-auto px-4">
-          <FadeIn direction="up">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Trusted by Leading Organizations</h2>
-              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                We provide security services to some of India's most prestigious companies and institutions
-              </p>
-            </div>
-          </FadeIn>
-
-          <StaggerChildren className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center">
-            {[1, 2, 3, 4, 5, 6].map((i) => (
-              <div key={i} className="flex justify-center">
-                <div className="w-32 h-32 bg-gray-100 rounded-lg flex items-center justify-center p-4 transition-all duration-300 hover:shadow-md hover:-translate-y-1">
-                  <Image
-                    src={`/placeholder.svg?height=80&width=80`}
-                    alt={`Client Logo ${i}`}
-                    width={80}
-                    height={80}
-                    className="opacity-70 hover:opacity-100 transition-opacity"
-                  />
-                </div>
-              </div>
-            ))}
-          </StaggerChildren>
         </div>
       </section>
 
