@@ -46,30 +46,30 @@ export default function Home() {
       position: "Operations Director, Tech Solutions Ltd",
       image: "/placeholder.svg?height=100&width=100",
       quote:
-        "SNS India has been our security partner for over 5 years. Their professionalism and attention to detail have significantly enhanced our security posture. We highly recommend their services.",
+        "Safensafe Management has been our security partner for over 5 years. Their professionalism and attention to detail have significantly enhanced our security posture. We highly recommend their services.",
     },
     {
       name: "Priya Sharma",
       position: "Facility Manager, Global Finance Corp",
       image: "/placeholder.svg?height=100&width=100",
       quote:
-        "The electronic security solutions provided by SNS India have transformed how we monitor and secure our premises. Their team's expertise and responsive support make them a valuable partner.",
+        "The electronic security solutions provided by Safensafe Management have transformed how we monitor and secure our premises. Their team's expertise and responsive support make them a valuable partner.",
     },
     {
       name: "Vikram Singh",
       position: "CEO, Retail Chain Group",
       image: "/placeholder.svg?height=100&width=100",
       quote:
-        "We've been impressed with SNS India's cash management services. Their attention to security protocols and efficiency has made them an integral part of our operations.",
+        "We've been impressed with Safensafe Management's cash management services. Their attention to security protocols and efficiency has made them an integral part of our operations.",
     },
   ]
 
   // Stats data
   const stats = [
-    { value: 30, suffix: "+", label: "Years of Experience" },
-    { value: 5000, suffix: "+", label: "Clients Nationwide" },
-    { value: 15000, suffix: "+", label: "Trained Security Personnel" },
-    { value: 100, suffix: "+", label: "Cities Covered" },
+    { value: 22, suffix: "+", label: "Years of Experience" },
+    { value: 250, suffix: "+", label: "Clients Nationwide" },
+    { value: 1500, suffix: "+", label: "Trained Security Personnel" },
+    { value: 11, suffix: "+", label: "Cities Covered" },
   ]
 
   return (
@@ -105,7 +105,7 @@ export default function Home() {
                       </Button>
                     </Link>
                     <Link href="/contact">
-                      <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+                      <Button size="lg" variant="outline" className="border-white text-black hover:bg-white/10">
                         Contact Us <ChevronRight className="ml-2 h-4 w-4" />
                       </Button>
                     </Link>
@@ -240,9 +240,9 @@ export default function Home() {
 
             <div>
               <FadeIn direction="right">
-                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Why Choose SNS India?</h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Why Choose Safensafe Management?</h2>
                 <p className="text-lg text-gray-600 mb-8">
-                  With over three decades of experience in the security industry, we have established ourselves as a
+                  With over two decades of experience in the security industry, we have established ourselves as a
                   trusted partner for businesses and institutions across India.
                 </p>
               </FadeIn>
@@ -301,7 +301,7 @@ export default function Home() {
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">What Our Clients Say</h2>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                Hear from businesses and organizations that trust SNS India for their security needs
+                Hear from businesses and organizations that trust Safensafe Management for their security needs
               </p>
             </div>
           </FadeIn>
@@ -346,9 +346,9 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <FadeIn direction="right">
               <div>
-                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">About SNS India</h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">About Safensafe Management</h2>
                 <p className="text-lg text-gray-600 mb-6">
-                  SNS India is one of the country's leading security services providers with a nationwide presence. For
+                  Safensafe Management is one of the country's leading security services providers with a nationwide presence. For
                   over three decades, we have been delivering exceptional security solutions to businesses, government
                   institutions, and individuals.
                 </p>
@@ -360,7 +360,7 @@ export default function Home() {
                   <div className="flex items-center">
                     <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
                       <span className="text-blue-700 font-bold text-xl">
-                        <CountUp end={30} suffix="+" />
+                        <CountUp end={22} suffix="+" />
                       </span>
                     </div>
                     <span className="text-gray-700">Years of Experience</span>
@@ -368,7 +368,7 @@ export default function Home() {
                   <div className="flex items-center">
                     <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
                       <span className="text-blue-700 font-bold text-xl">
-                        <CountUp end={100} suffix="+" />
+                        <CountUp end={11} suffix="+" />
                       </span>
                     </div>
                     <span className="text-gray-700">Cities Covered</span>
@@ -376,7 +376,7 @@ export default function Home() {
                   <div className="flex items-center">
                     <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
                       <span className="text-blue-700 font-bold text-xl">
-                        <CountUp end={5000} suffix="+" />
+                        <CountUp end={250} suffix="+" />
                       </span>
                     </div>
                     <span className="text-gray-700">Clients Served</span>
@@ -388,7 +388,7 @@ export default function Home() {
               <div className="relative h-[400px] rounded-lg overflow-hidden shadow-lg">
                 <Image
                   src="/placeholder.svg?height=400&width=600"
-                  alt="SNS India Headquarters"
+                  alt="Safensafe Management Headquarters"
                   fill
                   className="object-cover transition-transform duration-700 hover:scale-105"
                 />
@@ -437,7 +437,7 @@ export default function Home() {
           <FadeIn direction="up">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Enhance Your Security?</h2>
             <p className="text-xl mb-10 max-w-3xl mx-auto">
-              Contact our team today to discuss your security requirements and discover how SNS India can help protect
+              Contact our team today to discuss your security requirements and discover how Safensafe Management can help protect
               what matters most to you.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -453,7 +453,7 @@ export default function Home() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-white text-white hover:bg-blue-600 transition-transform duration-300 hover:-translate-y-1"
+                  className="border-white text-black hover:bg-blue-600 transition-transform duration-300 hover:-translate-y-1"
                 >
                   <Phone className="mr-2 h-4 w-4" /> Call Us
                 </Button>

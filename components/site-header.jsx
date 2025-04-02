@@ -32,13 +32,13 @@ export default function SiteHeader() {
 
   // Service pricing data
   const servicePricing = [
-    { name: "Manned Guarding", price: "₹15,000", unit: "per guard/month" },
+    { name: "Manned Guarding", price: "₹20,000", unit: "per guard/month" },
     { name: "Electronic Security", price: "₹25,000", unit: "starting package" },
     { name: "Cash Management", price: "₹35,000", unit: "per month" },
-    { name: "Facility Management", price: "₹40,000", unit: "per month" },
+    { name: "Facility Management", price: "₹20,000", unit: "per month" },
     { name: "Security Training", price: "₹5,000", unit: "per person" },
-    { name: "Event Management", price: "₹20,000", unit: "per event" },
-    { name: "Detective Services", price: "₹30,000", unit: "per case" },
+    { name: "Event Management", price: "₹30,000", unit: "per event" },
+    { name: "Detective Services", price: "₹40,000", unit: "per case" },
     { name: "Executive Protection", price: "₹50,000", unit: "per month" },
   ]
 
@@ -79,7 +79,7 @@ export default function SiteHeader() {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <Link href="/" className="flex items-center">
-              <Image src="/placeholder.svg?height=40&width=120" alt="SNS India Logo" width={120} height={40} priority />
+              <Image src="/sns_up.jpg?height=40&width=120" alt="SNS India Logo" width={120} height={40} priority />
             </Link>
           </motion.div>
 
@@ -118,7 +118,7 @@ export default function SiteHeader() {
                 className="flex items-center hover:text-blue-700 transition-colors duration-300"
               >
                 <Phone className="h-4 w-4 text-blue-700 mr-2" />
-                <span className="text-sm font-medium">1800-XXX-XXXX</span>
+                <span className="text-sm font-medium">+91-9971120778</span>
               </button>
             </div>
 

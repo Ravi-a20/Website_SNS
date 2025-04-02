@@ -13,15 +13,15 @@ export default function SiteFooter() {
           <div>
             <Link href="/" className="inline-block mb-6">
               <Image
-                src="/placeholder.svg?height=40&width=120"
-                alt="SNS India Logo"
+                src="/sns_up.jpg?height=40&width=120"
+                alt="Safensafe Management Logo"
                 width={120}
                 height={40}
-                className="invert"
+                className=""
               />
             </Link>
             <p className="mb-6">
-              SNS India is a leading security services provider with a nationwide presence, delivering exceptional
+              Safensafe Management is a leading security services provider with a nationwide presence, delivering exceptional
               security solutions for over three decades.
             </p>
             <div className="flex space-x-4">
@@ -105,6 +105,16 @@ export default function SiteFooter() {
                   Event Management
                 </Link>
               </li>
+              <li>
+                <Link href="/services#detective-services" className="hover:text-white">
+                Detective Services
+                </Link>
+              </li>
+              <li>
+                <Link href="/services#executive-protection" className="hover:text-white">
+                Executive Protection
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -130,7 +140,7 @@ export default function SiteFooter() {
 
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-sm mb-4 md:mb-0">&copy; {new Date().getFullYear()} SNS India. All rights reserved.</p>
+            <p className="text-sm mb-4 md:mb-0">&copy; {new Date().getFullYear()} Safensafe Management. All rights reserved.</p>
             <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 items-center">
               <VisitorCounter />
               <div className="flex space-x-6">
