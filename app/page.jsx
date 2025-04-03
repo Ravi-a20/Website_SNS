@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { ChevronRight, ArrowRight, Shield, Users, Building, Phone, CheckCircle, Award, Clock, Star } from "lucide-react"
+import { ChevronRight, ArrowRight, Shield, Building, CalendarDays, Phone, CheckCircle, Award, Clock, Star } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import FadeIn from "@/components/animations/fade-in"
 import CountUp from "@/components/animations/count-up"
@@ -24,18 +24,18 @@ export default function Home() {
         "Professional security personnel trained to protect your premises, assets, and people with vigilance and expertise.",
     },
     {
-      id: "electronic-security",
-      title: "Electronic Security",
+      id: "facility-management",
+      title: "Facility Management",
       icon: <Building className="h-7 w-7 text-blue-700" />,
       description:
-        "Advanced surveillance systems, access control, and alarm solutions to enhance your security infrastructure.",
+        "Comprehensive facility management services to maintain and optimize your property's operations and security.",
     },
     {
-      id: "cash-management",
-      title: "Cash Management Services",
-      icon: <Users className="h-7 w-7 text-blue-700" />,
+      id: "event-management",
+      title: "Event Management",
+      icon: <CalendarDays className="h-10 w-10 text-blue-700" />,
       description:
-        "Secure cash handling, transportation, and processing services for financial institutions and businesses.",
+        "Specialized security services for events, conferences, and public gatherings to ensure safety and order.",
     },
   ]
 
@@ -90,11 +90,11 @@ export default function Home() {
             slides={[
               <div key="slide1" className="flex flex-col items-center h-full justify-center">
                 <FadeIn direction="down" duration={0.8}>
-                  <TextReveal text="Securing India's Future" className="text-4xl md:text-6xl font-bold mb-6" />
+                  <TextReveal text="Securing  India's  Future" className="text-4xl md:text-6xl font-bold mb-6" />
                 </FadeIn>
                 <FadeIn direction="up" delay={0.3} duration={0.8}>
                   <p className="text-xl md:text-2xl mb-10 max-w-3xl">
-                    Providing comprehensive security solutions and services across India for over 30 years
+                    Providing comprehensive security solutions and services across India for over 22 years
                   </p>
                 </FadeIn>
                 <FadeIn direction="up" delay={0.5} duration={0.8}>
@@ -113,47 +113,50 @@ export default function Home() {
                 </FadeIn>
               </div>,
               <div key="slide2" className="flex flex-col items-center h-full justify-center">
-                <Image
-                  src="/placeholder.svg?height=600&width=1200"
-                  alt="Security Services"
-                  width={1200}
-                  height={600}
-                  className="rounded-lg shadow-2xl mb-8 max-w-full"
-                />
+                <div className="flex items-center gap-4 mb-6">
+                  <Image src="/image.png" alt="PSARA Certified" width={200} height={200} />
+                  <Image src="/iso.png" alt="ISO 9001:2015 Certified" width={80} height={80} />
+                </div>
                 <FadeIn direction="up" delay={0.3} duration={0.8}>
-                  <TextReveal text="Trusted Security Partner" className="text-4xl md:text-6xl font-bold mb-6" />
+                  <TextReveal text="Certified  for  Excellence" className="text-4xl md:text-6xl font-bold mb-6" />
                 </FadeIn>
                 <FadeIn direction="up" delay={0.5} duration={0.8}>
+                  <p className="text-xl md:text-2xl mb-10 max-w-3xl text-center">
+                    We are a <span className="font-bold">PSARA-licensed</span> and <span className="font-bold">ISO 9001:2015-certified</span> security agency, ensuring top-tier quality, compliance, and professionalism.
+                  </p>
+                </FadeIn>
+                <FadeIn direction="up" delay={0.7} duration={0.8}>
                   <div className="flex flex-col sm:flex-row gap-4">
-                    <Link href="/services">
+                  <Link href="/services">
                       <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-blue-900">
-                        Learn More <ChevronRight className="ml-2 h-4 w-4" />
+                        Our Services <ChevronRight className="ml-2 h-4 w-4" />
+                      </Button>
+                    </Link>
+                    <Link href="/contact">
+                      <Button size="lg" variant="outline" className="border-white text-black hover:bg-white/10">
+                        Contact Us <ChevronRight className="ml-2 h-4 w-4" />
                       </Button>
                     </Link>
                   </div>
                 </FadeIn>
               </div>,
               <div key="slide3" className="flex flex-col items-center h-full justify-center">
-                <Image
-                  src="/placeholder.svg?height=600&width=1200"
-                  alt="Security Technology"
-                  width={1200}
-                  height={600}
-                  className="rounded-lg shadow-2xl mb-8 max-w-full"
-                />
-                <FadeIn direction="up" delay={0.3} duration={0.8}>
-                  <TextReveal text="Excellence in Security" className="text-4xl md:text-6xl font-bold mb-6" />
-                </FadeIn>
-                <FadeIn direction="up" delay={0.5} duration={0.8}>
-                  <div className="flex flex-col sm:flex-row gap-4">
-                    <Link href="/services">
-                      <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-blue-900">
-                        Our Approach <ChevronRight className="ml-2 h-4 w-4" />
-                      </Button>
-                    </Link>
-                  </div>
-                </FadeIn>
-              </div>,
+              <Image
+                src="/manguarding.jpg"
+                alt="Security Team"
+                width={500}
+                height={150}
+                className="rounded-lg shadow-2xl mb-8 max-w-full"
+              />
+              <FadeIn direction="up" delay={0.3} duration={0.8}>
+                <TextReveal text="Our  Security,  Your  Peace  of  Mind" className="text-4xl md:text-6xl font-bold mb-6" />
+              </FadeIn>
+              <FadeIn direction="up" delay={0.5} duration={0.8}>
+                <blockquote className="text-xl md:text-2xl italic max-w-3xl text-center border-l-4 border-yellow-500 pl-4">
+                  "Security is not just about protection; it's about trust. Our highly trained personnel ensure safety, vigilance, and rapid response, making your world a safer place."
+                </blockquote>
+              </FadeIn>
+            </div>,
             ]}
             autoPlayInterval={7000}
           />
@@ -228,7 +231,7 @@ export default function Home() {
                 <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-yellow-100 rounded-full z-0"></div>
                 <div className="relative z-10 rounded-lg overflow-hidden shadow-xl">
                   <Image
-                    src="/placeholder.svg?height=600&width=800"
+                    src="/why_img.jpg?height=600&width=800"
                     alt="Security Team"
                     width={800}
                     height={600}
@@ -257,7 +260,7 @@ export default function Home() {
                   {
                     icon: <Award className="h-5 w-5 text-green-500" />,
                     title: "Industry Certifications",
-                    description: "We maintain the highest standards with industry-recognized certifications.",
+                    description: "We are PSARA-licenced and ISO 9001:2015-certified security agency.",
                   },
                   {
                     icon: <Clock className="h-5 w-5 text-green-500" />,
@@ -348,8 +351,8 @@ export default function Home() {
               <div>
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">About Safensafe Management</h2>
                 <p className="text-lg text-gray-600 mb-6">
-                  Safensafe Management is one of the country's leading security services providers with a nationwide presence. For
-                  over three decades, we have been delivering exceptional security solutions to businesses, government
+                  Safensafe Management is one of the country's most trusted security services providers with a nationwide presence. For
+                  over two decades, we have been delivering exceptional security solutions to businesses, government
                   institutions, and individuals.
                 </p>
                 <p className="text-lg text-gray-600 mb-8">
@@ -387,7 +390,7 @@ export default function Home() {
             <FadeIn direction="left" delay={0.3}>
               <div className="relative h-[400px] rounded-lg overflow-hidden shadow-lg">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/electronic.jpg?height=400&width=600"
                   alt="Safensafe Management Headquarters"
                   fill
                   className="object-cover transition-transform duration-700 hover:scale-105"
@@ -399,7 +402,7 @@ export default function Home() {
       </section>
 
       {/* Clients Section */}
-      <section className="py-16 md:py-24 bg-white">
+      {/* <section className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4">
           <FadeIn direction="up">
             <div className="text-center mb-16">
@@ -411,7 +414,7 @@ export default function Home() {
           </FadeIn>
 
           <StaggerChildren className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center">
-            {[1, 2, 3, 4, 5, 6].map((i) => (
+            {[1, 2, 3, 4].map((i) => (
               <div key={i} className="flex justify-center">
                 <div className="w-32 h-32 bg-gray-100 rounded-lg flex items-center justify-center p-4 transition-all duration-300 hover:shadow-md hover:-translate-y-1">
                   <Image
@@ -426,7 +429,7 @@ export default function Home() {
             ))}
           </StaggerChildren>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="py-16 md:py-24 bg-blue-700 text-white relative overflow-hidden">
