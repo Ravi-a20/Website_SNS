@@ -126,14 +126,14 @@ export default function ContactPage() {
         </FadeIn>
       </div>
 
-      <FadeIn direction="up">
+      {/* <FadeIn direction="up">
         <div className="mb-20">
           <h2 className="text-2xl font-bold mb-6 text-center">Our Locations</h2>
           <div className="bg-gray-200 rounded-lg h-[400px] flex items-center justify-center hover:shadow-lg transition-all duration-500">
             <p className="text-gray-600">Interactive Map Would Be Displayed Here</p>
           </div>
         </div>
-      </FadeIn>
+      </FadeIn> */}
 
       <FadeIn direction="up" delay={0.3}>
         <div className="bg-blue-50 p-8 rounded-lg text-center mb-12 hover:shadow-md transition-all duration-300">
@@ -143,7 +143,7 @@ export default function ContactPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="tel:+918XXXXXXXXXX"
+              href="tel:+919971120778"
               className="bg-blue-700 hover:bg-blue-800 text-white px-4 py-2 rounded-md flex items-center justify-center transition-transform duration-300 hover:-translate-y-1"
             >
               <Phone className="mr-2 h-4 w-4" /> Call Emergency Helpline

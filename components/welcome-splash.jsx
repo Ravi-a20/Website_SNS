@@ -76,7 +76,7 @@ export default function WelcomeSplash() {
               }}
               className="text-4xl md:text-5xl font-bold mb-4"
             >
-              Welcome to SNS Security
+              Welcome to Safensafe Management
             </motion.h1>
 
             <motion.div
@@ -91,9 +91,9 @@ export default function WelcomeSplash() {
                 },
               }}
             >
-              <p className="text-xl mb-3">Securing India's Future Since 1990</p>
+              <p className="text-xl mb-3">Securing India's Future Since 2002</p>
               <p className="text-lg text-blue-200 max-w-2xl mx-auto">
-                For over three decades, we've been providing comprehensive security solutions to businesses and
+                For over two decades, we've been providing comprehensive security solutions to businesses and
                 institutions across India, with a commitment to excellence and innovation.
               </p>
             </motion.div>

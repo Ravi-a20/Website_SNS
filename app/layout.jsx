@@ -9,9 +9,12 @@ import { ToastProvider } from "@/components/ui/use-toast"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "SNS India - Security & Network Services",
+  title: "SafenSafe Management - Security & Safety",
+  icons: {
+    icon: "/shield.png",
+  },
   description:
-    "SNS India is a leading security services provider with a nationwide presence, delivering exceptional security solutions for over three decades.",
+    "SNS India is a popular security services provider with a nationwide presence, delivering exceptional security solutions for over two decades.",
     generator: 'v0.dev'
 }
 
