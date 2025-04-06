@@ -44,7 +44,7 @@ export default function ServicesPage() {
       id: "facility-management",
       title: "Facility Management",
       icon: <Building2 className="h-10 w-10 text-blue-700" />,
-      image: "/facility.jpg?height=400&width=600",
+      image: "/facility_1.jpg?height=400&width=600",
       description:
         "Comprehensive facility management services to maintain and optimize your property's operations and security.",
       details:
@@ -63,7 +63,7 @@ export default function ServicesPage() {
       id: "event-management",
       title: "Event Management",
       icon: <CalendarDays className="h-10 w-10 text-blue-700" />,
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/event.png?height=400&width=600",
       description:
         "Specialized security services for events, conferences, and public gatherings to ensure safety and order.",
       details:
