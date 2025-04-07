@@ -53,11 +53,11 @@ export default function SiteHeader() {
   // Handle phone click based on device
   const handlePhoneClick = () => {
     if (isMobile()) {
-      window.location.href = "tel:1800XXXXXXX"
+      window.location.href = "tel:+919555699400"
     } else {
       // For desktop, you could open a contact modal, copy to clipboard, etc.
-      navigator.clipboard.writeText("1800-XXX-XXXX")
-      alert("Phone number copied to clipboard: 1800-XXX-XXXX")
+      navigator.clipboard.writeText("+91-9555699400")
+      alert("Phone number copied to clipboard: +91-9555699400")
     }
   }
 
@@ -228,9 +228,9 @@ export default function SiteHeader() {
                 transition={{ duration: 0.3, delay: 0.3 }}
               >
                 <div className="flex items-center mb-4">
-                  <a href="tel:1800XXXXXXX" className="flex items-center">
+                  <a href="tel:+919555699400" className="flex items-center">
                     <Phone className="h-4 w-4 text-blue-700 mr-2" />
-                    <span className="text-sm font-medium">1800-XXX-XXXX</span>
+                    <span className="text-sm font-medium">+91-9555699400</span>
                   </a>
                 </div>
                 <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>

@@ -37,15 +37,17 @@ export default function AboutPage() {
           </div>
         </FadeIn>
         <FadeIn direction="left" delay={0.3}>
-          <div className="relative h-[400px] rounded-lg overflow-hidden shadow-lg">
+          <div className="relative w-full max-w-[500px] mx-auto h-auto">
             <Image
-              src="/placeholder.svg?height=400&width=600"
+              src="/safensafe.gif"
               alt="Safensafe Management History"
-              fill
-              className="object-cover transition-transform duration-700 hover:scale-105"
+              width={500}
+              height={500}
+              className="object-contain w-full h-auto transition-transform duration-700 hover:scale-105 rounded-lg shadow-lg"
             />
           </div>
         </FadeIn>
+
       </div>
 
       <div className="bg-gray-50 p-8 rounded-lg mb-20">
@@ -131,7 +133,7 @@ export default function AboutPage() {
 
       <FadeIn direction="up">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-6">Our Leadership Team</h2>
+          <h2 className="text-3xl font-bold mb-6">Our Leaders</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Meet the experienced professionals who guide our organization.
           </p>
@@ -152,13 +154,13 @@ export default function AboutPage() {
             image: "/mama_101.jpg"
             // image: "/placeholder.svg?height=200&width=200"
           },
-          {
-            name: "Om Prakash Mishra",
-            title: "Manager and Sr Field Officer", 
-            description: "Managing new recruits and ground duties.", 
-            image: "/placeholder.svg?height=200&width=200"
-          
-          },
+          // {
+          //   name: "Om Prakash Mishra",
+          //   title: "Manager and Sr Field Officer", 
+          //   description: "Managing new recruits and ground duties.", 
+          //   image: "/placeholder.svg?height=200&width=200"
+
+          // },
           // { 
           //   name: "Emily Davis", 
           //   title: "COO", 

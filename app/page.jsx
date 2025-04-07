@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { ChevronRight, ArrowRight, Shield, Building, CalendarDays, Phone, CheckCircle, Award, Clock, Star } from "lucide-react"
+import { ChevronRight, ArrowRight, Shield, Building, CalendarDays, Phone, CheckCircle, Award, Clock, Star, UserRound } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import FadeIn from "@/components/animations/fade-in"
 import CountUp from "@/components/animations/count-up"
@@ -42,25 +42,25 @@ export default function Home() {
   // Testimonials data
   const testimonials = [
     {
-      name: "Rajesh Kumar",
-      position: "Operations Director, Tech Solutions Ltd",
-      image: "/placeholder.svg?height=100&width=100",
+      name: "Abdullah Ahmed",
+      position: "COO, IIHM",
+      image: null,
       quote:
-        "Safensafe Management has been our security partner for over 5 years. Their professionalism and attention to detail have significantly enhanced our security posture. We highly recommend their services.",
+        "Safensafe Management has been our security partner for over 15 years. Their professionalism and attention to detail have significantly enhanced our security posture. We highly recommend their services.",
     },
     {
-      name: "Priya Sharma",
-      position: "Facility Manager, Global Finance Corp",
-      image: "/placeholder.svg?height=100&width=100",
+      name: "Shailendra Bhadauria",
+      position: "Chairman, Pratap University, Jaipur",
+      image: null,
       quote:
-        "The electronic security solutions provided by Safensafe Management have transformed how we monitor and secure our premises. Their team's expertise and responsive support make them a valuable partner.",
+        "The Manned Guarding service provided by Safensafe Management have transformed how we monitor and secure our premises. Their team's expertise and responsive support make them a valuable partner.",
     },
     {
-      name: "Vikram Singh",
-      position: "CEO, Retail Chain Group",
-      image: "/placeholder.svg?height=100&width=100",
+      name: "Munjul Chopra",
+      position: "SNS Facility Management Service User",
+      image: null,
       quote:
-        "We've been impressed with Safensafe Management's cash management services. Their attention to security protocols and efficiency has made them an integral part of our operations.",
+        "We've been impressed with Safensafe Management's facility management services. Their attention to security protocols and efficiency has made them an integral part of our operations.",
     },
   ]
 
@@ -127,7 +127,7 @@ export default function Home() {
                 </FadeIn>
                 <FadeIn direction="up" delay={0.7} duration={0.8}>
                   <div className="flex flex-col sm:flex-row gap-4">
-                  <Link href="/services">
+                    <Link href="/services">
                       <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-blue-900">
                         Our Services <ChevronRight className="ml-2 h-4 w-4" />
                       </Button>
@@ -141,22 +141,22 @@ export default function Home() {
                 </FadeIn>
               </div>,
               <div key="slide3" className="flex flex-col items-center h-full justify-center">
-              <Image
-                src="/manguarding.jpg"
-                alt="Security Team"
-                width={500}
-                height={150}
-                className="rounded-lg shadow-2xl mb-8 max-w-full"
-              />
-              <FadeIn direction="up" delay={0.3} duration={0.8}>
-                <TextReveal text="Our  Security,  Your  Peace  of  Mind" className="text-4xl md:text-6xl font-bold mb-6" />
-              </FadeIn>
-              <FadeIn direction="up" delay={0.5} duration={0.8}>
-                <blockquote className="text-xl md:text-2xl italic max-w-3xl text-center border-l-4 border-yellow-500 pl-4">
-                  "Security is not just about protection; it's about trust. Our highly trained personnel ensure safety, vigilance, and rapid response, making your world a safer place."
-                </blockquote>
-              </FadeIn>
-            </div>,
+                <Image
+                  src="/manguarding.jpg"
+                  alt="Security Team"
+                  width={500}
+                  height={150}
+                  className="rounded-lg shadow-2xl mb-8 max-w-full"
+                />
+                <FadeIn direction="up" delay={0.3} duration={0.8}>
+                  <TextReveal text="Our  Security,  Your  Peace  of  Mind" className="text-4xl md:text-6xl font-bold mb-6" />
+                </FadeIn>
+                <FadeIn direction="up" delay={0.5} duration={0.8}>
+                  <blockquote className="text-xl md:text-2xl italic max-w-3xl text-center border-l-4 border-yellow-500 pl-4">
+                    "Security is not just about protection; it's about trust. Our highly trained personnel ensure safety, vigilance, and rapid response, making your world a safer place."
+                  </blockquote>
+                </FadeIn>
+              </div>,
             ]}
             autoPlayInterval={7000}
           />
@@ -322,13 +322,15 @@ export default function Home() {
                     <p className="text-gray-600 italic mb-6">"{testimonial.quote}"</p>
                     <div className="flex items-center">
                       <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
-                        <Image
-                          src={testimonial.image || "/placeholder.svg"}
-                          alt={testimonial.name}
-                          width={48}
-                          height={48}
-                          className="object-cover"
-                        />
+                        {testimonial.image ? (
+                          <Image
+                            src={testimonial.image}
+                            alt={testimonial.name}
+                            width={48}
+                            height={48}
+                            className="object-cover"
+                          />
+                        ) : (<UserRound className="h-8 w-8 text-blue-600" />)}
                       </div>
                       <div>
                         <h4 className="font-bold">{testimonial.name}</h4>
