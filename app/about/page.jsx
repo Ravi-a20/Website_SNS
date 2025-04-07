@@ -39,7 +39,7 @@ export default function AboutPage() {
         <FadeIn direction="left" delay={0.3}>
           <div className="relative w-full max-w-[500px] mx-auto h-auto">
             <Image
-              src="/safensafe.gif"
+              src="/Safensafe.gif"
               alt="Safensafe Management History"
               width={500}
               height={500}
