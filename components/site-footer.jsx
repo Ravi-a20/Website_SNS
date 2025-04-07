@@ -132,7 +132,7 @@ export default function SiteFooter() {
               </li>
               <li className="flex">
                 <Mail className="h-5 w-5 mr-3 flex-shrink-0" />
-                <span>info@snsindia.com</span>
+                <span>info@safensafe.co.in</span>
               </li>
             </ul>
           </div>

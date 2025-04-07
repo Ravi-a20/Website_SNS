@@ -69,9 +69,9 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Email</h3>
                     <p className="text-gray-600">
-                      info@snsindia.com
+                      info@safensafe.co.in
                       <br />
-                      support@snsindia.com
+                      support@safensafe.co.in
                     </p>
                   </div>
                 </div>
@@ -149,7 +149,7 @@ export default function ContactPage() {
               <Phone className="mr-2 h-4 w-4" /> Call Emergency Helpline
             </a>
             <a
-              href="mailto:support@snsindia.com"
+              href="mailto:support@safensafe.co.in"
               className="border border-blue-700 text-blue-700 hover:bg-blue-50 px-4 py-2 rounded-md flex items-center justify-center transition-transform duration-300 hover:-translate-y-1"
             >
               <Mail className="mr-2 h-4 w-4" /> Email Support Team
