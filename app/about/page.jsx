@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { ChevronRight } from "lucide-react"
@@ -205,9 +206,11 @@ export default function AboutPage() {
             We're always looking for talented individuals to join our team. Explore career opportunities at Safensafe Management
             and be part of our mission to create a safer society.
           </p>
-          <Button className="bg-yellow-500 hover:bg-yellow-600 text-blue-900 transition-transform duration-300 hover:-translate-y-1">
-            View Career Opportunities <ChevronRight className="ml-2 h-4 w-4" />
-          </Button>
+          <Link href="/careers">
+            <Button className="bg-yellow-500 hover:bg-yellow-600 text-blue-900 transition-transform duration-300 hover:-translate-y-1">
+              View Career Opportunities <ChevronRight className="ml-2 h-4 w-4" />
+            </Button>
+          </Link>
         </div>
       </FadeIn>
     </div>
