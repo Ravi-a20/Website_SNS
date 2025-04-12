@@ -53,14 +53,14 @@ export default function Home() {
       position: "Chairman, Pratap University, Jaipur",
       image: null,
       quote:
-        "The Manned Guarding service provided by Safensafe Management have transformed how we monitor and secure our premises. Their team's expertise and responsive support make them a valuable partner.",
+        "The Manned Guarding service provided by Safensafe Management have transformed how we monitor and secure our premises. Their team's expertise and responsive support make them a valuable partner. We are using there services from past 3 years and we are very happy with there services.",
     },
     {
-      name: "Munjul Chopra",
+      name: "Manjul Chopra",
       position: "SNS Facility Management Service User",
       image: null,
       quote:
-        "We've been impressed with Safensafe Management's facility management services. Their attention to security protocols and efficiency has made them an integral part of our operations.",
+        "We've been impressed with Safensafe Management's facility management services. We are using there services over two decads. Their attention to security protocols and efficiency has made them an integral part of our operations.",
     },
   ]
 
